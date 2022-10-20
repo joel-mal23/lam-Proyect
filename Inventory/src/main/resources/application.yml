@@ -1,0 +1,14 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: ms-inventory
+  jpa:
+    properties:
+      hibernate:
+       dialect: org.hibernate.dialect.SQLServer2012Dialect
+  datasource:
+    url: jdbc:sqlserver://localhost:14033;databaseName=TestDB;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Passw0rd
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
