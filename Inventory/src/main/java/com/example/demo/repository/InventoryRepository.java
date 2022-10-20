@@ -10,7 +10,7 @@ import com.example.demo.entity.InventatyEntity;
 public interface InventoryRepository extends JpaRepository<InventatyEntity, Integer>{
 	
 	
-	@Procedure(value= "SP_INVENTARY_CONS")
+	@Procedure(value= "SP_INVENTARY_GET") 
 	public List<InventatyEntity> finAllInventory();
 
 }
