@@ -7,5 +7,7 @@ import com.example.demo.entity.InventatyEntity;
 public interface InventaryService {
 
 	List<InventatyEntity> findInventaty();
+
+	InventatyEntity saveInventoty(InventatyEntity inventatyEntity);
 	
 }

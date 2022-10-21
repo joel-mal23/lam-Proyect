@@ -21,5 +21,13 @@ public class InventaryServiceImpl implements InventaryService{
 		
 	}
 	
+	@Override
+	public InventatyEntity saveInventoty(InventatyEntity inventatyEntity)
+	{
+		return inventoryRepository.saveInventoty(inventatyEntity.getNombre(),inventatyEntity.getApePat(),
+												 inventatyEntity.getApeMat(),inventatyEntity.getNoEmpl());
+		
+	}
+	
 
 }
